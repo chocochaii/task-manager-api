@@ -172,3 +172,23 @@ DELETE https://chocochaii-task-manager.herokuapp.com/tasks/[task_id]
 **Delete Avatar**
 
 DELETE https://chocochaii-task-manager.herokuapp.com/users/me/avatar
+
+## Development
+**.env**
+Create dev.env and test.env with the following variables in config/ directory
+
+dev.env
+```
+PORT=<your_server_port>
+SENDGRID_API_KEY=<your_sendgrid_api_key>
+MONGODB_URL=mongodb://127.0.0.1:27017/task-manager-api
+JWT_SECRET=<your_jwt_secret_key>
+```
+
+test.env
+```
+PORT=<your_server_port>
+SENDGRID_API_KEY=<your_sendgrid_api_key>
+MONGODB_URL=mongodb://127.0.0.1:27017/task-manager-api-test
+JWT_SECRET=<your_jwt_secret_key>
+```
